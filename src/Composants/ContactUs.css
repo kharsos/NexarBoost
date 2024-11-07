@@ -1,0 +1,48 @@
+
+/* Updated styles */
+.contact-bg {
+    background: url('../../public/background3.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(8px); /* Adds blur effect */
+}
+
+/* Style the contact form wrapper */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+/* Add a transparent purple background to the 'Get in touch' section */
+.info-wrap {
+    background: rgba(128, 0, 128, 0.3); /* Semi-transparent purple */
+    backdrop-filter: blur(5px); /* Adds a blur effect */
+    border-radius: 10px; /* Adds rounded corners */
+    color: black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+
+.dbox a {
+    text-decoration: none; /* Reset to default underline */
+    color: inherit; /* Use default link color (usually blue) */
+}
+.btn{
+    width: 100%;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}

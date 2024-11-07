@@ -1,0 +1,92 @@
+/* Parent container for image and text */
+.image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding-left: 5%;
+    margin-bottom: 50px; /* Space between sections */
+  }
+  
+  .image-text-section:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse layout for alternating sections */
+  }
+  
+  /* Image container */
+  .image-container {
+    width: 50%;
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  /* Image styling */
+  .slide-image1 {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to match your example */
+  }
+  
+  /* Slide-in animation for image */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  /* Text container */
+  .overlay-text {
+    position: relative;
+    left: -5%;
+    width: 30%;
+    background-color: #6a0dad; /* Similar purple background */
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  .overlay-text-left {
+    position: relative;
+    left: 5%;
+    width: 30%;
+    background-color: #2E2E2E ;   ;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  .overlay-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

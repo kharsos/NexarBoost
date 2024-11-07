@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    padding-top: 10%;
+    padding-left: 3%;
+  }
+  
+  .hero-title {
+    color: #3b1e81;
+    font-style:inherit;
+    font-size:50px;
+    font-weight:800;
+  }
+  
+  .hero-text {
+    color: #3b1e81;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #563d7c;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+  
+  .nav-link {
+    color: #3b1e81;
+    font-weight: bold;
+    position: relative;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #8467c8; /* Change text color on hover */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #3b1e81; /* Underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expand the underline on hover */
+  }
+
+  .nav-item{
+    margin: 0rem 1.8rem;
+  }
+  
+  .navbar {
+    /* position:sticky; */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex;
+    justify-content: space-between;
+  }
+  .background-container {
+    background-image: url('../public/background.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Adjust as necessary */
+    position: relative; /* Needed for child positioning */
+    z-index: 1; /* Keep this layer above the background */
+  }
+  
+  .header,
+  .hero-section {
+    position: relative; /* Positioning context for children */
+    z-index: 2; /* Bring this content above the background image */
+  }
+  
+  
+  
+  /* animations */
+  /* CSS for slide-in-up effect */
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(100px); /* Start from below */
+  animation: slideInUpAnimation 1s ease-out forwards; /* Adjust the duration if needed */
+}
+
+@keyframes slideInUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* Start from 100px below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+.social-icons{
+  padding-right: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons svg{
+  padding:0.1rem 0.3rem;
+}
+.logo{
+  height:90px;
+}
+
+.nav-links{
+  margin-left: 8%;
+}
+
+/* OFFER PAGE */
+
+.mt-3{
+  font-weight: bold;
+  color:#563d7c;
+}
+.offer_h1{
+  margin-bottom: 10%;
+}
+.services{
+  margin-bottom: 10%;
+}
+.service-title{
+  color: #3b1e81;
+  font-weight: bolder;
+
+}
+.service-description{
+  color:#563d7c;
+
+}
+.services-list{
+  color: #563d7c;
+  font-weight: bolder;
+
+}
+/* about us */
+.about-text{
+  margin-top: 8%;
+  font-size: large;
+  color: #3b1e81;
+  font-weight: bold;
+  word-spacing: 0.2em; 
+  line-height: 2; 
+}

@@ -1,0 +1,102 @@
+/* General Footer Styles */
+.footer-container {
+    background-color: #3b1e81; /* Dark Purple */
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-top {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-logo {
+    max-width: 120px;
+  }
+  
+  .company-info, .contact-info {
+    margin: 10px 0;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    color: #ccb6ff; /* Cyan hover effect */
+  }
+  
+  .footer-right svg {
+    width: 30px;
+    margin: 0 10px;
+  }
+  
+  .footer-right svg:hover {
+    filter: brightness(1.5); /* Brighten social media icons on hover */
+  }
+  .footer-right a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer-right a:hover{
+    color: #ccb6ff;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    border-top: 1px solid #888;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #ccb6ff;
+  }
+  .contact-info a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .fa-brands{
+    margin: 10px;
+  }
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
